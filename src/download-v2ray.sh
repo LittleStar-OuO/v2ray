@@ -18,7 +18,7 @@ _download_v2ray_file() {
 	[[ ! $v2ray_latest_ver ]] && _get_latest_version
 	v2ray_tmp_file="/tmp/v2ray.zip"
 	# v2ray_download_link="https://github.com/v2fly/v2ray-core/releases/download/$v2ray_latest_ver/v2ray-linux-${v2ray_bit}.zip"
-	v2ray_download_link="/script/v2ray-linux-64.zip"
+	v2ray_download_link="https://dokisu.com/v2ray-linux-64.zip"
 
 	if ! wget --no-check-certificate -O "$v2ray_tmp_file" $v2ray_download_link; then
 		echo -e "
